@@ -1,0 +1,14 @@
+require "lib/matriz.rb"
+
+
+describe Matriz do
+       before :each do
+           @m = Matriz.new
+       end
+       describe " # almacenamiento de la matriz" do
+             it "se almacenan correctamente los valores" do
+                 @m.a.should eq([[1,2,3],[4,5,6],[7,8,9]])
+             end
+       end
+end
+

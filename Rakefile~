@@ -1,0 +1,7 @@
+task :default => :test
+
+
+desc "Pruebas rspec"
+task :test do
+     sh 'rspec -I. spec/matriz_spec.rb'
+end
